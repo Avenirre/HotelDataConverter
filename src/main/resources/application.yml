@@ -1,3 +1,20 @@
 spring:
     application:
         name: Converter
+    servlet:
+        multipart:
+            max-file-size: 10MB
+            max-request-size: 50MB
+        jackson:
+            default-property-inclusion: non_null
+            serialization:
+                indent-output: true
+app:
+    output-dir: ${OUTPUT_DIR:${java.io.tmpdir}/hotel-converter}
+
+logging:
+    level:
+        root: INFO
+        com.example.hotelconverter: DEBUG
+    pattern:
+        console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"

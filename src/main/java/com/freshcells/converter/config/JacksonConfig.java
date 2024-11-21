@@ -1,0 +1,34 @@
+package com.freshcells.converter.config;
+
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.json.JsonMapper;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
+
+@Configuration
+public class JacksonConfig {
+
+    @Bean
+    @Primary
+    @Qualifier("jsonMapper")
+    public ObjectMapper objectMapper() {
+        return JsonMapper.builder()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+                .configure(SerializationFeature.INDENT_OUTPUT, true)
+                .build();
+    }
+
+    @Bean
+    @Qualifier("xmlMapper")
+    public XmlMapper xmlMapper() {
+        return XmlMapper.builder()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false)
+                .configure(SerializationFeature.INDENT_OUTPUT, true)
+                .build();
+    }
+}
