@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
+import java.util.regex.Pattern;
 
 @Slf4j
 @Service
@@ -24,17 +25,40 @@ public class HotelConverterService {
     private final FileSystemService fileSystemService;
     private final ObjectMapper objectMapper;
 
+    private static final Pattern IMAGE_URL_PATTERN =
+            Pattern.compile(".*\\.(jpg|jpeg|png|gif)$", Pattern.CASE_INSENSITIVE);
+
+    private Set<String> extractAllImageUrls(Object obj, Set<String> urls) {
+        if (obj instanceof Map<?,?> map) {
+            if (map.containsKey("image") && map.get("image") instanceof List<?> images) {
+                images.forEach(img -> {
+                    if (img instanceof Map<?,?> imageMap) {
+                        Object urlObj = imageMap.get("url");
+                        if (urlObj instanceof String url) {
+                            urls.add(url);
+                        }
+                    }
+                });
+            }
+
+            map.values().forEach(value -> extractAllImageUrls(value, urls));
+        } else if (obj instanceof Collection<?> collection) {
+            collection.forEach(item -> extractAllImageUrls(item, urls));
+        } else if (obj instanceof String str && IMAGE_URL_PATTERN.matcher(str).matches()) {
+            urls.add(str);
+        }
+        return urls;
+    }
+
     public ProcessingResult processFiles(List<MultipartFile> files) {
         LocalDateTime timestamp = LocalDateTime.now();
         Path outputPath = fileSystemService.getOutputPath(timestamp);
-        //add /images to the output path ('/home/user/output/20240120_153045/images')
         Path imagesDir = outputPath.resolve("images");
 
         Map<String, HotelData> hotels = new HashMap<>();
-        List<CompletableFuture<Void>> imageDownloads = new ArrayList<>();
-        int totalImages = 0;
+        List<CompletableFuture<Boolean>> imageDownloads = new ArrayList<>();
 
-        //process files
+        // Process files
         for (MultipartFile file : files) {
             String filename = file.getOriginalFilename();
             if (filename == null) continue;
@@ -49,21 +73,30 @@ public class HotelConverterService {
                 case COA -> hotelData.withCoa(content);
             });
 
-            //extract and download images
-            Set<String> imageUrls = extractImageUrls(content);
-            totalImages += imageUrls.size();
-
+            // Extract and download images
+            Set<String> imageUrls = extractAllImageUrls(content, new HashSet<>());
             imageUrls.forEach(url ->
                     imageDownloads.add(fileSystemService.downloadImage(url, hotelId, imagesDir))
             );
         }
 
         try {
-            //wait for image downloads
+            // Wait for all downloads to complete and count successful ones
             CompletableFuture.allOf(imageDownloads.toArray(CompletableFuture[]::new))
                     .get(5, TimeUnit.MINUTES);
 
-            //save result
+            long successfulDownloads = imageDownloads.stream()
+                    .map(future -> {
+                        try {
+                            return future.get();
+                        } catch (Exception e) {
+                            return false;
+                        }
+                    })
+                    .filter(success -> success)
+                    .count();
+
+            // Save result
             fileSystemService.saveJsonResult(objectMapper.writeValueAsBytes(hotels), outputPath);
 
             return new ProcessingResult(
@@ -71,38 +104,11 @@ public class HotelConverterService {
                     imagesDir,
                     timestamp,
                     files.size(),
-                    totalImages
+                    (int) successfulDownloads
             );
 
         } catch (Exception e) {
             throw new HotelFileProcessingException("Failed to complete processing", e);
-        }
-    }
-
-    private Set<String> extractImageUrls(Map<String, Object> content) {
-        Set<String> urls = new HashSet<>();
-        extractUrls(content, urls);
-        return urls;
-    }
-
-    private void extractUrls(Object obj, Set<String> urls) {
-        if (obj instanceof Map<?,?> map) {
-            map.forEach((k, v) -> {
-                if (k instanceof String key && key.equals("image") && v instanceof List<?> images) {
-                    images.forEach(img -> {
-                        if (img instanceof Map<?,?> imageMap) {
-                            Object urlObj = imageMap.get("url");
-                            if (urlObj instanceof String url) {
-                                urls.add(url);
-                            }
-                        }
-                    });
-                } else {
-                    extractUrls(v, urls);
-                }
-            });
-        } else if (obj instanceof Collection<?> collection) {
-            collection.forEach(item -> extractUrls(item, urls));
         }
     }
 }

@@ -6,8 +6,13 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+import javax.imageio.ImageIO;
+import java.awt.image.BufferedImage;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -18,6 +23,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.UUID;
 import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionException;
 
 @Slf4j
 @Service
@@ -54,28 +60,48 @@ public class FileSystemService {
         }
     }
 
-    public CompletableFuture<Void> downloadImage(String url, String hotelId, Path imagesDir) {
-        return CompletableFuture.runAsync(() -> {
+    public CompletableFuture<Boolean> downloadImage(String url, String hotelId, Path imagesDir) {
+        return CompletableFuture.supplyAsync(() -> {
             try {
+                log.debug("Starting download of image from URL: {}", url);
+
                 HttpRequest request = HttpRequest.newBuilder()
                         .uri(URI.create(url))
+                        .timeout(Duration.ofSeconds(30))
+                        .header("User-Agent", "Mozilla/5.0")
                         .GET()
                         .build();
-
-                Path imagePath = imagesDir.resolve(generateImageFilename(hotelId, url));
 
                 HttpResponse<byte[]> response = httpClient.send(request,
                         HttpResponse.BodyHandlers.ofByteArray());
 
                 if (response.statusCode() == 200) {
-                    Files.createDirectories(imagePath.getParent());
-                    Files.write(imagePath, response.body());
-                    log.debug("Downloaded image: {}", imagePath);
+                    try (InputStream is = new ByteArrayInputStream(response.body())) {
+                        BufferedImage image = ImageIO.read(is);
+                        if (image == null) {
+                            log.warn("Downloaded file is not a valid image: {}", url);
+                            return false;
+                        }
+
+                        if (image.getWidth() == 0 || image.getHeight() == 0) {
+                            log.warn("Image has invalid dimensions: {}", url);
+                            return false;
+                        }
+
+                        Path imagePath = imagesDir.resolve(generateImageFilename(hotelId, url));
+                        Files.createDirectories(imagePath.getParent());
+                        Files.write(imagePath, response.body());
+                        log.debug("Successfully downloaded and verified image from {} to {}", url, imagePath);
+                        return true;
+                    }
                 } else {
-                    log.warn("Failed to download image {}: {}", url, response.statusCode());
+                    log.warn("Failed to download image from {}, status code: {}",
+                            url, response.statusCode());
+                    return false;
                 }
             } catch (Exception e) {
-                log.error("Failed to download image: " + url, e);
+                log.error("Error processing image from {}: {}", url, e.getMessage());
+                return false;
             }
         });
     }
@@ -86,8 +112,12 @@ public class FileSystemService {
     }
 
     private String getFileExtension(String url) {
-        String filename = URI.create(url).getPath();
-        int lastDotIndex = filename.lastIndexOf('.');
-        return lastDotIndex > 0 ? filename.substring(lastDotIndex + 1) : "jpg";
+        try {
+            String path = new URI(url).getPath();
+            int lastDot = path.lastIndexOf('.');
+            return lastDot > 0 ? path.substring(lastDot + 1) : "jpg";
+        } catch (URISyntaxException e) {
+            return "jpg";
+        }
     }
 }
