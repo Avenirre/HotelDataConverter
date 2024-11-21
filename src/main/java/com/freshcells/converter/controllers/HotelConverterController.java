@@ -17,12 +17,12 @@ import java.util.List;
 @RequestMapping("/api/v1/converter")
 @RequiredArgsConstructor
 public class HotelConverterController {
-    private final HotelConverterService converterService;
+    private final HotelConverterService hotelConverterService;
 
     @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<ProcessingResult> convertFiles(
             @RequestParam("files") List<MultipartFile> files) {
-        ProcessingResult result = converterService.processFiles(files);
+        ProcessingResult result = hotelConverterService.processFiles(files);
         return ResponseEntity.ok(result);
     }
 }

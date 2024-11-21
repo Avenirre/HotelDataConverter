@@ -32,7 +32,9 @@ public class FileProcessingService {
                 throw new HotelValidationException("Filename is missing");
             }
 
-            return switch (getFileExtension(filename)) {
+            String fileExtension = filename.substring(filename.lastIndexOf('.') + 1).toLowerCase();
+
+            return switch (fileExtension) {
                 case "xml" -> xmlMapper.readValue(file.getInputStream(), Map.class);
                 case "json" -> jsonMapper.readValue(file.getInputStream(), Map.class);
                 default -> throw new HotelValidationException("Unsupported file type: " + filename);
@@ -40,10 +42,6 @@ public class FileProcessingService {
         } catch (IOException e) {
             throw new HotelFileProcessingException("Failed to process file: " + file.getOriginalFilename(), e);
         }
-    }
-
-    private String getFileExtension(String filename) {
-        return filename.substring(filename.lastIndexOf('.') + 1).toLowerCase();
     }
 }
 

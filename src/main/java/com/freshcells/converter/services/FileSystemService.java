@@ -30,9 +30,13 @@ public class FileSystemService {
 
     public Path getOutputPath(LocalDateTime timestamp) {
         try {
+            //create Path from outputDir (application.yaml)
             Path outputPath = Path.of(appProperties.outputDir())
+                    //add formatted timestamp to the base path ('/home/user/output/20240120_153045')
                     .resolve(timestamp.format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss")))
+                    //remove redundant separators
                     .normalize();
+            //create directories
             Files.createDirectories(outputPath);
             return outputPath;
         } catch (IOException e) {

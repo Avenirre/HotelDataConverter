@@ -31,18 +31,19 @@ public class HotelConverterService {
     public ProcessingResult processFiles(List<MultipartFile> files) {
         LocalDateTime timestamp = LocalDateTime.now();
         Path outputPath = fileSystemService.getOutputPath(timestamp);
+        //add /images to the output path ('/home/user/output/20240120_153045/images')
         Path imagesDir = outputPath.resolve("images");
 
         Map<String, HotelData> hotels = new HashMap<>();
         List<CompletableFuture<Void>> imageDownloads = new ArrayList<>();
         int totalImages = 0;
 
-        // Process files
+        //process files
         for (MultipartFile file : files) {
             String filename = file.getOriginalFilename();
             if (filename == null) continue;
 
-            String hotelId = extractHotelId(filename);
+            String hotelId = filename.split("-")[0];
             Map<String, Object> content = fileProcessingService.processFile(file);
 
             // Update hotel data
@@ -52,7 +53,7 @@ public class HotelConverterService {
                 case COA -> hotelData.withCoa(content);
             });
 
-            // Extract and download images
+            //extract and download images
             Set<String> imageUrls = extractImageUrls(content);
             totalImages += imageUrls.size();
 
@@ -62,11 +63,11 @@ public class HotelConverterService {
         }
 
         try {
-            // Wait for image downloads
+            //wait for image downloads
             CompletableFuture.allOf(imageDownloads.toArray(CompletableFuture[]::new))
                     .get(5, TimeUnit.MINUTES);
 
-            // Save result
+            //save result
             fileSystemService.saveJsonResult(objectMapper.writeValueAsBytes(hotels), outputPath);
 
             return new ProcessingResult(
@@ -80,10 +81,6 @@ public class HotelConverterService {
         } catch (Exception e) {
             throw new HotelFileProcessingException("Failed to complete processing", e);
         }
-    }
-
-    private String extractHotelId(String filename) {
-        return filename.split("-")[0];
     }
 
     private Set<String> extractImageUrls(Map<String, Object> content) {
