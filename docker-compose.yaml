@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  hotel-converter:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./output:/app/output
+    environment:
+      - OUTPUT_DIR=/app/output
