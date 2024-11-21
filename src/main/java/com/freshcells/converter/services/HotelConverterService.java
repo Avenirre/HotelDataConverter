@@ -15,7 +15,6 @@ import java.time.LocalDateTime;
 import java.util.*;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Pattern;
 
 @Slf4j
 @Service
@@ -44,7 +43,7 @@ public class HotelConverterService {
             Map<String, Object> content = fileProcessingService.processFile(file);
 
             // Update hotel data
-            HotelData hotelData = hotels.computeIfAbsent(hotelId, HotelData::empty);
+            HotelData hotelData = hotels.computeIfAbsent(hotelId, k -> HotelData.empty());
             hotels.put(hotelId, switch(FileType.fromFilename(filename)) {
                 case GIATA -> hotelData.withGiata(content);
                 case COA -> hotelData.withCoa(content);
