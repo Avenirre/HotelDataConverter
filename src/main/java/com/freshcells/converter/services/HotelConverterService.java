@@ -25,9 +25,6 @@ public class HotelConverterService {
     private final FileSystemService fileSystemService;
     private final ObjectMapper objectMapper;
 
-    private static final Pattern IMAGE_URL_PATTERN =
-            Pattern.compile(".*\\.(jpg|jpeg|png|gif)$", Pattern.CASE_INSENSITIVE);
-
     public ProcessingResult processFiles(List<MultipartFile> files) {
         LocalDateTime timestamp = LocalDateTime.now();
         Path outputPath = fileSystemService.getOutputPath(timestamp);
@@ -92,10 +89,15 @@ public class HotelConverterService {
     private void extractUrls(Object obj, Set<String> urls) {
         if (obj instanceof Map<?,?> map) {
             map.forEach((k, v) -> {
-                if (k instanceof String key && key.equals("url")
-                        && v instanceof String url
-                        && IMAGE_URL_PATTERN.matcher(url).matches()) {
-                    urls.add(url);
+                if (k instanceof String key && key.equals("image") && v instanceof List<?> images) {
+                    images.forEach(img -> {
+                        if (img instanceof Map<?,?> imageMap) {
+                            Object urlObj = imageMap.get("url");
+                            if (urlObj instanceof String url) {
+                                urls.add(url);
+                            }
+                        }
+                    });
                 } else {
                     extractUrls(v, urls);
                 }
