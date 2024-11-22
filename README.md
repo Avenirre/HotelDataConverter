@@ -1,4 +1,4 @@
-Hotel Data Converter
+# Hotel Data Converter
 
 A Spring Boot application for processing hotel data from multiple sources (GIATA and COA) and downloading associated images.
 
