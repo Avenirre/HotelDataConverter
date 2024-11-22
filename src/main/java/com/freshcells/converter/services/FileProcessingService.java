@@ -2,6 +2,7 @@ package com.freshcells.converter.services;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+import com.freshcells.converter.enums.FileExtension;
 import com.freshcells.converter.exceptions.HotelFileProcessingException;
 import com.freshcells.converter.exceptions.HotelValidationException;
 import lombok.extern.slf4j.Slf4j;
@@ -35,10 +36,9 @@ public class FileProcessingService {
 
             String fileExtension = FilenameUtils.getExtension(filename);
 
-            return switch (fileExtension) {
-                case "xml" -> xmlMapper.readValue(file.getInputStream(), Map.class);
-                case "json" -> jsonMapper.readValue(file.getInputStream(), Map.class);
-                default -> throw new HotelValidationException("Unsupported file type: " + filename);
+            return switch (FileExtension.fromExtension(fileExtension)) {
+                case XML -> xmlMapper.readValue(file.getInputStream(), Map.class);
+                case JSON -> jsonMapper.readValue(file.getInputStream(), Map.class);
             };
         } catch (IOException e) {
             throw new HotelFileProcessingException("Failed to process file: " + file.getOriginalFilename(), e);
