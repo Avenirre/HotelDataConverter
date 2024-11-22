@@ -5,5 +5,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 
 @ConfigurationProperties(prefix = "app")
 public record AppProperties(
-        @NotBlank String outputDir
+        @NotBlank String outputDir,
+        @NotBlank int httpClientTimeoutSeconds
 ) {}

@@ -11,6 +11,7 @@ spring:
                 indent-output: true
 app:
     output-dir: ${OUTPUT_DIR:${java.io.tmpdir}/hotel-converter}
+    http-client-timeout-seconds: 10
 
 logging:
     level:
