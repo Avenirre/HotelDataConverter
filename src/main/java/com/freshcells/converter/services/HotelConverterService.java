@@ -58,7 +58,7 @@ public class HotelConverterService {
         Map<String, HotelData> hotels = new HashMap<>();
         List<CompletableFuture<Boolean>> imageDownloads = new ArrayList<>();
 
-        // Process files
+        //process files
         for (MultipartFile file : files) {
             String filename = file.getOriginalFilename();
             if (filename == null) continue;
@@ -66,7 +66,7 @@ public class HotelConverterService {
             String hotelId = filename.split("-")[0];
             Map<String, Object> content = fileProcessingService.processFile(file);
 
-            // Update hotel data
+            //update hotel data
             HotelData hotelData = hotels.computeIfAbsent(hotelId, k -> HotelData.empty());
             hotels.put(hotelId, switch(FileType.fromFilename(filename)) {
                 case GIATA -> hotelData.withGiata(content);
@@ -81,7 +81,7 @@ public class HotelConverterService {
         }
 
         try {
-            // Wait for all downloads to complete and count successful ones
+            //wait for all downloads to complete and count successful ones
             CompletableFuture.allOf(imageDownloads.toArray(CompletableFuture[]::new))
                     .get(5, TimeUnit.MINUTES);
 
@@ -96,7 +96,7 @@ public class HotelConverterService {
                     .filter(success -> success)
                     .count();
 
-            // Save result
+            //save result
             fileSystemService.saveJsonResult(objectMapper.writeValueAsBytes(hotels), outputPath);
 
             return new ProcessingResult(

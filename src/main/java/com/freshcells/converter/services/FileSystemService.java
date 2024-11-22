@@ -76,6 +76,7 @@ public class FileSystemService {
 
                 if (response.statusCode() == 200) {
                     try (InputStream is = new ByteArrayInputStream(response.body())) {
+                        //validate image
                         BufferedImage image = ImageIO.read(is);
                         if (image == null) {
                             log.warn("Downloaded file is not a valid image: {}", url);
