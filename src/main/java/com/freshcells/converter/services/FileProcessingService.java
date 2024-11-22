@@ -5,6 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import com.freshcells.converter.exceptions.HotelFileProcessingException;
 import com.freshcells.converter.exceptions.HotelValidationException;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.io.FilenameUtils;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -32,7 +33,7 @@ public class FileProcessingService {
                 throw new HotelValidationException("Filename is missing");
             }
 
-            String fileExtension = filename.substring(filename.lastIndexOf('.') + 1).toLowerCase();
+            String fileExtension = FilenameUtils.getExtension(filename);
 
             return switch (fileExtension) {
                 case "xml" -> xmlMapper.readValue(file.getInputStream(), Map.class);
