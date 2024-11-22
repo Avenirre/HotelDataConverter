@@ -31,6 +31,10 @@ Images that are referenced inside the files (only images).
 - Maven
 - Docker
 
+## Tests
+- junit(JUnit5, Mockito)
+- integration
+
 ## Request and response examples
 
 Request:

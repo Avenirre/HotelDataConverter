@@ -1,0 +1,705 @@
+{
+  "content": {
+    "hotel": {
+      "giata_id": "594608",
+      "iff": "177859",
+      "name": "Casa Cook Kos",
+      "address": {
+        "zip": "853 00",
+        "city": "Marmari",
+        "country": "GR",
+        "formatted": {
+          "line": [
+            "853 00 Marmari",
+            "Kos"
+          ]
+        }
+      },
+      "phone": "",
+      "email": "info@casacook.com",
+      "url": "http://casacook.com/kos",
+      "update_timestamp": "2018-03-12 06:58:04",
+      "category": "",
+      "region_code": "",
+      "country_name": "",
+      "texts": {
+        "text": {
+          "@attributes": {
+            "tourOperator": "TCHR",
+            "source": "TCHR",
+            "tourOperatorLong": "",
+            "id": "",
+            "name": null
+          },
+          "paragraph": [
+            {
+              "headline": "TCHR_Hotel_Title_xx",
+              "description": "",
+              "content": "Casa Cook Kos"
+            },
+            {
+              "headline": "TCHR_Hotel_Subtitle_xx",
+              "description": "",
+              "content": "Einfacher Luxus am Strand von Marmari auf der Insel Kos, Griechenland"
+            },
+            {
+              "headline": "TCHR_Hotel_Opening_Hours_xx",
+              "description": "",
+              "content": "geöffnet: 21.04. - 31.10.2018"
+            },
+            {
+              "headline": "TCHR_Hotel_Headline_xx",
+              "description": "",
+              "content": "Gemeinsam ganz bei sich sein"
+            },
+            {
+              "headline": "TCHR_Hotel_Description_xx",
+              "description": "",
+              "content": "Im Casa Cook Kos am Ägäischen Meer warten urbanes Flair und modernes Design auf dich, die sich harmonisch in die traditionelle, zeitlos interpretierte Inselarchitektur einfügen. Warme, erdige Töne und eine Mischung aus rustikalen und edlen Materialien schaffen einen entspannten Rückzugsort. Zu Gast sein im Casa Cook Kos ist wie zu Gast sein bei griechischen Freunden. Ihr werdet herzlich empfangen in der Rezeption, die eher wie ein Wohnzimmer wirkt. Ob gemeinsam mit Freunden im Beach Club, ganz privat auf der eigenen Terrasse der großzügig gestalteten Zimmer oder auf einer der gemütlichen Sonnenliegen am Sandstrand direkt vor der Haustür, folgt ganz einfach eurem eigenen Urlaubsrhythmus und nehmt euch die Zeit für all die Dinge, die euch wichtig sind."
+            },
+            {
+              "headline": "TCHR_Location_Headline_xx",
+              "description": "",
+              "content": "Direkt am weiten Naturstrand gelegen"
+            },
+            {
+              "headline": "TCHR_Location_Description_xx",
+              "description": "",
+              "content": "Das Casa Cook Kos in Griechenland liegt an einem langen, weißen Sandstrand ca. 4 km vom Badeort Marmari an der Nordküste von Kos entfernt. Eingerahmt vom bergigen Hinterland der Insel und vom Bergpanorama der vorgelagerten Inseln Kalymnos und Pserimos, fügt sich das im Dorfstil erbaute Hotel harmonisch in die natürliche Umgebung ein. In ca. 16 km Entfernung liegt Kos Stadt mit seiner charmanten Altstadt, dem Hafen und gemütlichen Restaurants und Tavernen. Zum Flughafen der Insel sind es ca. 13 km."
+            },
+            {
+              "headline": "TCHR_Room_Headline_xx",
+              "description": "",
+              "content": "Private Refugien zum Wohlfühlen"
+            },
+            {
+              "headline": "TCHR_Room_Description_xx",
+              "description": "",
+              "content": "100 Zimmer und Suiten verteilen sich auf sechs Zimmerkategorien, die alle mit ihrem eigenen Luxus aufwarten. Dabei ist jedes Zimmer warm und einladend gestaltet, zurückhaltend elegant, traditionell und modern zugleich. Alle Zimmer haben eine private Terrasse, COCO-MAT Matratzen sowie Wireless Bluetooth Lautsprecher von Marshall. Wählt zwischen:  <P level=\"1\">stylishen Doppelzimmern mit Gartenblick <P level=\"1\">Bungalowzimmern mit Gartenblick <P level=\"1\">Doppelzimmern mit Meerblick im ersten Obergeschoss <P level=\"1\">geräumigen Junior Suiten mit Sharing Pool <P level=\"1\">Suiten mit privatem Pool <P level=\"1\">Villen mit zwei Schlafzimmern und privatem Pool  Alle Zimmer sind ausgestattet mit:  <P level=\"1\">Klimaanlage <P level=\"1\">Badezimmer mit Dusche und WC <P level=\"1\">Föhn <P level=\"1\">Bademäntel <P level=\"1\">Hausschuhe (in Suiten und Villen) <P level=\"1\">Sat-TV <P level=\"1\">WLAN (kostenfrei) <P level=\"1\">Safe <P level=\"1\">Minibar (gegen Gebühr)"
+            },
+            {
+              "headline": "TCHR_Restaurants_Headline_xx",
+              "description": "",
+              "content": "Frische und kreative Küche"
+            },
+            {
+              "headline": "TCHR_Restaurants_Description_xx",
+              "description": "",
+              "content": "Im Herzen des Casa Cook Kos vereinen sich Restaurant, Bar und Poolbereich zum TO KIMA Beach Club. Es ist ein Ort der Begegnung und des Genusses, ein Ort zum Relaxen und Feiern. Und das alles in lockerer Barfuß-Atmosphäre. Im Restaurant, welches über eine großzügige Veranda mit Meerblick verfügt, wird Frühstück in Büfettform mit À-la-Carte-Optionen gegen Aufpreis sowie À-la-Carte-Lunch und –Dinner angeboten. Das Farm-to-Table Konzept des Restaurants wurde vom Sternekoch Ettore Botrini entwickelt. Der Fokus liegt dabei auf der mediterranen Küche mit frischen Zutaten und saisonalen Produkten von der eigenen Farm. Serviert werden die Gerichte im Family Style, zum gemeinsamen Teilen und Genießen an den großen Tischen."
+            },
+            {
+              "headline": "TCHR_Beach_and_Pool_Headline_xx",
+              "description": "",
+              "content": "Privater oder gemeinschaftlicher Pool: Relaxen nach Wunsch"
+            },
+            {
+              "headline": "TCHR_Beach_and_Pool_Description_xx",
+              "description": "",
+              "content": "Besonders tagsüber zieht es die Gäste des Casa Cook Kos an den zentralen Pool des Beach Clubs, der von einem Holzdeck mit bequemen Sonnenliegen und Strohsonnenschirmen umgeben ist. Auch am Strand und in den Dünen gibt es Sonnenliegen und Sonnenschirme. Pool- und Strandtücher sind für Hotelgäste inklusive. Wollt ihr mehr Privatsphäre genießen, bieten die Junior Suiten einen Zugang zum Gemeinschaftspool, während die Suiten und Villen mit einem privaten Pool aufwarten. Hier auf den eigenen Sonnenliegen oder in den Hängematten lassen sich problemlos ganze Urlaubstage verbringen."
+            },
+            {
+              "headline": "TCHR_Activities_Headline_xx",
+              "description": "",
+              "content": "So individuell wie du selbst"
+            },
+            {
+              "headline": "TCHR_Activities_Description_xx",
+              "description": "",
+              "content": "Einem abwechslungsreichen Urlaub steht im Casa Cook Kos am Ägäischen Meer nichts entgegen, denn der flach abfallende Sandstrand in Marmari ist sowohl für Ruhestunden als auch für Wassersport bestens geeignet. Beim Stand-up Paddling, Kitesurfing , Windsurfing und Reiten lässt sich die natürliche Schönheit der griechischen Insel aus einer neuen Perspektive erkunden.<P/>Wir halten aber auch ausgewählte Tipps und Angebote zu entfernteren Spots bereit. Entdeckt Kos und die Nachbarinseln mit dem hoteleigenen Motorboot. Wir steuern für euch einsame Buchten mit türkisfarbenem Wasser zum Schnorcheln und Relaxen an. Oder wandert zum Gipfel des Berges Dikeos, von welchem ihr eine fantastische 360° Sicht über die Insel und das Meer genießen könnt.Und abends trifft man sich zum Sundowner bei entspannter DJ-Musik im Beach Club."
+            },
+            {
+              "headline": "TCHR_Wellness_Headline_xx",
+              "description": "",
+              "content": "Body and Soul – Zeit für Entspannung"
+            },
+            {
+              "headline": "TCHR_Wellness_Description_xx",
+              "description": "",
+              "content": "Die Nutzung unseres modernen Fitnessstudios ist für euch kostenfrei möglich. Neben zubuchbaren individuellen Workouts mit einem Personal Trainer bietet das Casa Cook Kos auch Yogakurse auf unserer Yoga-Terrasse unter freiem Himmel an. Direkt nebenan befindet sich unser Spa mit Hammam, Sauna, Massageräumen und Indoor Pool. Hier könnt ihr in einer entspannten Atmosphäre abschalten und neue Energie tanken."
+            },
+            {
+              "headline": "TCHR_Meta_Headline_xx",
+              "description": "",
+              "content": "Casa Cook Kos – Marmari, Kos, Griechenland"
+            },
+            {
+              "headline": "TCHR_Meta_Description_xx",
+              "description": "",
+              "content": "Das Hotel Casa Cook Kos in Marmari überzeugt durch eine authentische, gemeinschaftliche Atmosphäre und ein modernes Inneres, wo Körper und Geist zur Ruhe kommen können."
+            },
+            {
+              "headline": "Importkenner_xx",
+              "description": "",
+              "content": ""
+            }
+          ],
+          "copyrightText": "<br><br><strong>Bitte beachten Sie bei einer Buchung, dass nur die Hotelbeschreibung des gebuchten Veranstalters und Angebotes Gültigkeit hat. Diese können Sie nach Wahl Ihres Angebotes unter \"Angebotsinfos\" einsehen. Es ist möglich, dass in Einzelfällen nicht alle Veranstalter Hotelbeschreibungen ausweisen.</strong><br><br><strong>Hotelbeschreibung des Veranstalters: </strong><br>"
+        }
+      },
+      "usps": {
+        "hotelAttributes": {
+          "@attributes": {
+            "source": "HolidayCheck"
+          },
+          "attribute": [
+            {
+              "@attributes": {
+                "priority": 0,
+                "rating": "5.71875"
+              },
+              "usp": "sehr schöne Zimmer"
+            },
+            {
+              "@attributes": {
+                "priority": 1,
+                "rating": "5.4375"
+              },
+              "usp": "abwechslungsreiches Essen"
+            },
+            {
+              "@attributes": {
+                "priority": 2,
+                "rating": "5.41176"
+              },
+              "usp": "sehr gutes Hotel"
+            },
+            {
+              "@attributes": {
+                "priority": 3,
+                "rating": "5.175"
+              },
+              "usp": "beliebtes Hotel"
+            },
+            {
+              "@attributes": {
+                "priority": 4,
+                "rating": "5.08387"
+              },
+              "usp": "sehr gute Lage"
+            },
+            {
+              "@attributes": {
+                "priority": 5,
+                "rating": "5.03125"
+              },
+              "usp": "zuvorkommender Service"
+            },
+            {
+              "@attributes": {
+                "priority": 6,
+                "rating": "4.65517"
+              },
+              "usp": "gutes Freizeitangebot"
+            }
+          ]
+        }
+      },
+      "additionalTexts": [
+        
+      ],
+      "images": {
+        "@attributes": {
+          "source": "",
+          "sourceLong": "",
+          "katalogid": "",
+          "katalogname": ""
+        },
+        "image": [
+          {
+            "priority": 1,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTg5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 2,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTUyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 3,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDQyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 4,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDc5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 5,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDg4LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 6,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjgxLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 7,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjY5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 8,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTU0LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 9,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTU2LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 10,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTk1LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 11,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTY2LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 12,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTYyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 13,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTQyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 14,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDQ5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 15,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTIxLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 16,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTE1LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 17,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDgxLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 18,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDg3LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 19,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjEzLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 20,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTc0LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 21,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTY3LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 22,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTIyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 23,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjc5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 24,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjIyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 25,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDg5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 26,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTg0LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 27,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTg1LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 28,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTU4LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 29,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTY1LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 30,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjA4LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 31,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTIzLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 32,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjYzLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 33,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTc3LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 34,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTM0LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 35,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDk5LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 36,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTI0LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 37,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTM1LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 38,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTcyLmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 39,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTg2LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 40,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMTk2LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 41,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMjY4LmpwZyI7fQ%3D%3D"
+          },
+          {
+            "priority": 42,
+            "title": "",
+            "alt": "",
+            "category": "",
+            "width": 0,
+            "height": 0,
+            "url": "https://coah.mein-reiseportal.de/cdn/?filename=YToyOntzOjY6InNvdXJjZSI7czo0OiJ0Y2hyIjtzOjM6InVybCI7czo5MToiZnRwOi8vMTAuMTUuNjYuNjM6MjEvUHJvZC9iaWxkZXIvVENIUi9iaWxkZXIvd2ViL0tHUy9HUl9LR1NfQ2FzYV9Db29rX0tvc190cm8xajFwXzAwMDg1LmpwZyI7fQ%3D%3D"
+          }
+        ]
+      },
+      "videos": {
+        "video": [
+          
+        ]
+      },
+      "attributes": {
+        "@attributes": {
+          "source": "GIATA"
+        },
+        "category": [
+          {
+            "@attributes": {
+              "name": "update_timestamp"
+            },
+            "attribute": {
+              "update_timestamp": null
+            }
+          },
+          {
+            "@attributes": {
+              "name": "giata_id"
+            },
+            "attribute": {
+              "giata_id": null
+            }
+          }
+        ]
+      },
+      "ratings": {
+        "@attributes": {
+          "source": "HolidayCheck"
+        },
+        "hc_id": "1841774",
+        "recommendation_rate": 89.7,
+        "rating": 5.4,
+        "reviews": 39,
+        "url": "http://www.holidaycheck.com/hr/930e1f59-128d-42ed-88c0-e7628b83f7b9",
+        "detailedRating": {
+          "averageRating": {
+            "overall": "5.37949",
+            "couple": "5.4069",
+            "family": "5.4",
+            "friends": "5.2",
+            "beach": "5.49444",
+            "wellness": "1.0",
+            "other": "5.5"
+          },
+          "hotelRating": {
+            "overall": "5.41176",
+            "couple": "5.38462",
+            "family": "5.25",
+            "friends": "5.75",
+            "beach": "5.53125",
+            "wellness": "1.0",
+            "other": "6.0"
+          },
+          "locationRating": {
+            "overall": "5.08387",
+            "couple": "5.2",
+            "family": "5.25",
+            "friends": "4.25",
+            "beach": "5.05333",
+            "wellness": "0.0",
+            "other": "6.0"
+          },
+          "serviceRating": {
+            "overall": "5.03125",
+            "couple": "5.16667",
+            "family": "4.0",
+            "friends": "5.25",
+            "beach": "5.0",
+            "wellness": "0.0",
+            "other": "6.0"
+          },
+          "foodRating": {
+            "overall": "5.4375",
+            "couple": "5.41667",
+            "family": "5.25",
+            "friends": "5.75",
+            "beach": "5.45161",
+            "wellness": "0.0",
+            "other": "5.0"
+          },
+          "roomRating": {
+            "overall": "5.71875",
+            "couple": "5.70833",
+            "family": "5.75",
+            "friends": "5.75",
+            "beach": "5.70968",
+            "wellness": "0.0",
+            "other": "6.0"
+          },
+          "sportRating": {
+            "overall": "4.65517",
+            "couple": "4.7619",
+            "family": "4.75",
+            "friends": "4.0",
+            "beach": "4.60714",
+            "wellness": "0.0",
+            "other": "6.0"
+          },
+          "recommendation": {
+            "overall": "89.74359",
+            "couple": "93.10345",
+            "family": "80.0",
+            "friends": "80.0",
+            "beach": "91.666664",
+            "wellness": "0.0",
+            "other": "100.0"
+          }
+        }
+      },
+      "hotelAwards": [
+        
+      ]
+    }
+  }
+}
