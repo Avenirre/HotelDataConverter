@@ -64,6 +64,32 @@ Failed response example (for wrong file format):
 }
 ```
 
+## Merging files example
+
+file 1-giata.xml:
+```
+<data>GIATA data</data>
+```
+
+file 1-coah.xml:
+```
+<data>COAH data</data>
+```
+
+result file:
+```
+{
+  "1": {
+    "giata": {
+      "data": "GIATA data"
+    },
+    "coah": {
+      "data": "COAH data"
+    }
+  }
+}
+```
+
 ## Swagger: 
 http://localhost:8080/swagger-ui/index.html
 
