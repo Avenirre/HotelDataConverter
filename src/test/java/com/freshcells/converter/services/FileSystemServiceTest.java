@@ -34,6 +34,7 @@ class FileSystemServiceTest {
 
     @BeforeEach
     void setUp() {
+        when(appProperties.httpClientTimeoutSeconds()).thenReturn(30);
         fileSystemService = new FileSystemService(appProperties);
     }
 

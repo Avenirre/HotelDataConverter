@@ -2,8 +2,6 @@ package com.freshcells.converter.services;
 
 import com.freshcells.converter.config.AppProperties;
 import com.freshcells.converter.exceptions.HotelFileSystemException;
-import jakarta.annotation.PostConstruct;
-import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -27,15 +25,14 @@ import java.util.concurrent.CompletableFuture;
 
 @Slf4j
 @Service
-@RequiredArgsConstructor
 public class FileSystemService {
     private final AppProperties appProperties;
-    private HttpClient httpClient;
+    private final HttpClient httpClient;
 
     private final static String DATE_FORMAT_PATTERN = "yyyyMMdd_HHmmss";
 
-    @PostConstruct
-    private void init() {
+    public FileSystemService(AppProperties appProperties) {
+        this.appProperties = appProperties;
         this.httpClient = HttpClient.newBuilder()
                 .connectTimeout(Duration.ofSeconds(appProperties.httpClientTimeoutSeconds()))
                 .build();
