@@ -77,7 +77,7 @@ public class HotelConverterService {
                 case COA -> hotelData.withCoa(content);
             });
 
-            // Extract and download images
+            //extract and download images
             Set<String> imageUrls = extractAllImageUrls(content, new HashSet<>());
             imageUrls.forEach(url ->
                     imageDownloads.add(fileSystemService.downloadImage(url, hotelId, imagesDir))

@@ -14,7 +14,6 @@ import org.springframework.context.annotation.Configuration;
 public class JacksonConfig {
 
     @Bean
-    //@Primary
     @Qualifier("jsonMapper")
     public ObjectMapper objectMapper() {
         return JsonMapper.builder()
