@@ -3,10 +3,10 @@ package com.freshcells.converter.services;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.freshcells.converter.exceptions.HotelValidationException;
 import com.freshcells.converter.model.ProcessingResult;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.io.TempDir;
+import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.mock.web.MockMultipartFile;
@@ -32,19 +32,11 @@ class HotelConverterServiceTest {
     @Mock
     private ObjectMapper objectMapper;
 
+    @InjectMocks
     private HotelConverterService hotelConverterService;
 
     @TempDir
     Path tempDir;
-
-    @BeforeEach
-    void setUp() {
-        hotelConverterService = new HotelConverterService(
-                fileProcessingService,
-                fileSystemService,
-                objectMapper
-        );
-    }
 
     @Test
     void processFiles_SuccessfulProcessing() throws Exception {
